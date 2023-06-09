@@ -1,6 +1,11 @@
 # LineNotify
 Use Line notify plugin for laravel
 
+## Install Package
+```
+composer require gcreate/line_notify
+```
+
 ## Register Package Service Provider
 ```php!
 // config/app.php
