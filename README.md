@@ -22,7 +22,7 @@ php artisan vendor:publish --tag=line-notify-config
 
 ## Make Migration to Users Table
 ```
-php artisan vendor:publish --tag=line-notify-config
+php artisan vendor:publish --tag=line-notify-migration
 
 php artisan migrate
 ```
