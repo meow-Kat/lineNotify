@@ -33,7 +33,7 @@ php artisan migrate
 LineNotifyClientID=Your Line Service ClientID
 LineNotifyClientSecret=Your Line Service ClientSecret
 ```
-## Useage
+## Usage
 ### Binding User Line
 ```php!
 use Gcreate\LineNotify\Controllers\LineNotify;
