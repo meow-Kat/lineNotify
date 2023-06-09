@@ -1,0 +1,31 @@
+{
+    "name": "gcreate/line_notify",
+    "description": "use line notify plugin for laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gcreate\\LineNotify\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "meow-Kat",
+            "email": "kangle7891@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "gcreate",
+            "email": "service@gcreate.com.tw",
+            "role": "Company"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4.3",
+        "laravel/framework": "^8.0"
+    },
+    "require-dev": {
+        "gcreate/line-notify": "*"
+    }
+}
