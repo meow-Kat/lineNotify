@@ -38,7 +38,9 @@ LineNotifyClientSecret=Your Line Service ClientSecret
 ```php!
 use Gcreate\LineNotify\Controllers\LineNotify;
 
-$redirectUrl = LineNotify::bindLineUrl($userModel)
+$lineNotify = new LineNotify();
+
+$redirectUrl = $lineNotify->bindLineUrl($userModel)
 
 return redirect($redirectUrl);    // go binding line page
 ```
@@ -60,14 +62,18 @@ protected $except = [
 ```php!
 use Gcreate\LineNotify\Controllers\LineNotify;
 
-$callbackStatus = LineNotify::callback($request, $user);
+$lineNotify = new LineNotify();
+
+$callbackStatus = $lineNotify->callback($request, $user);
 ```
 
 ### Revoke User Line
 ```php!
 use Gcreate\LineNotify\Controllers\LineNotify;
 
-$result = LineNotify::revoke($user);    // true | error
+$lineNotify = new LineNotify();
+
+$result = $lineNotify->revoke($user);    // true | error
 if($result){
     // ...do something
 }
@@ -77,5 +83,7 @@ if($result){
 ```php!
 use Gcreate\LineNotify\Controllers\LineNotify;
 
-LineNotify::send($user,$text);
+$lineNotify = new LineNotify();
+
+$lineNotify->send($user,$text);
 ```
