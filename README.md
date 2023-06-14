@@ -48,7 +48,7 @@ return redirect($redirectUrl);    // go binding line page
 To your routes/web.php add this
 
 ```php!
-Route::post( 'your/callback/url', [yourController::class, 'callback']);
+Route::post( 'your/callback/url', [yourController::class, 'callback'])->name('line-notify.callback');
 ```
 
 Go to your Middleware/VerifyCsrfToken.php add this 
