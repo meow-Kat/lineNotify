@@ -14,8 +14,8 @@ class AddLineTokenColumnAndLineStateTokenToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('line_notify_access_token');
-            $table->string('line_notify_state');
+            $table->string('line_notify_access_token')->nullable();
+            $table->string('line_notify_state')->nullable();
 
         });
     }
